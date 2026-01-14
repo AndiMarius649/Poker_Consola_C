@@ -75,32 +75,6 @@ void afiseazaMana(Carte mana[5])
     }
 }
 
-void afiseazaCarteStruct(Carte c){
-
-        afiseazaCarte(simbolValoare(c.valoare),simbolSuita(c.suita));
-
-}
-
-
-
-
-void afiseazaCarte(char* numar,char* suita)
-{
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-
-        SetConsoleTextAttribute(hConsole, 4);
-
-        printf(
-"┌─────────┐\n"
-"│ %-2s      │\n"
-"│         │\n"
-"│    %s    │\n"
-"│         │\n"
-"│       %-2s│\n"
-"└─────────┘\n",numar,suita,numar);
-SetConsoleTextAttribute(hConsole, 7);
-}
-
 
 void main(){
 
@@ -358,3 +332,4 @@ void main(){
 
 
 }
+
