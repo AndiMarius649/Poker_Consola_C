@@ -3,13 +3,11 @@
 #include<stdlib.h>
 #include<time.h>
 #include<string.h>
-
 typedef struct{
 
     int valoare;
     char suita;
 }Carte;
-
 
 const char* simbolSuita(char s)
 {
@@ -39,16 +37,13 @@ const char* linieCarte(int linie, const char* numar, const char* suita)
         sprintf(linieNum, "│ %-2s      │", numar);
         return linieNum;
     }
-
     if(linie == 2) return "│         │";
-
     if(linie == 3) {
         if(strcmp(suita,"♠")==0) return "│    ♠    │";
         if(strcmp(suita,"♥")==0) return "│    ♥    │";
         if(strcmp(suita,"♦")==0) return "│    ♦    │";
         if(strcmp(suita,"♣")==0) return "│    ♣    │";
     }
-
     if(linie == 4) {
         if(strcmp(numar,"10")==0) return "│      10 │";
         if(strcmp(numar,"A")==0)  return "│       A │";
@@ -76,19 +71,13 @@ void afiseazaMana(Carte mana[5])
     }
 }
 
-
 void main(){
 
     SetConsoleOutputCP(CP_UTF8);
 
-
-
-
     int valori[] = {2,3,4,5,6,7,8,9,10,11,12,13,14}; // 11=J,12=Q,13=K,14=A
-    const char* suite[] = {"♠", "♥", "♦", "♣"};
 
     Carte pachet[52];
-
 
     int index = 0;
     for(int s=0; s<4; s++) {
@@ -330,9 +319,4 @@ void main(){
         printf("Egalitate\n");
     }
 }
-
-
 }
-
-
-
