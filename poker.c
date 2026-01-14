@@ -118,7 +118,7 @@ void main(){
     afiseazaMana(manaJucator);
 
     printf("Cartile tale: %s%s  %s%s  %s%s  %s%s  %s%s\n",simbolSuita(manaJucator[0].suita),simbolValoare(manaJucator[0].valoare),simbolSuita(manaJucator[1].suita),simbolValoare(manaJucator[1].valoare),simbolSuita(manaJucator[2].suita),simbolValoare(manaJucator[2].valoare),simbolSuita(manaJucator[3].suita),simbolValoare(manaJucator[3].valoare),simbolSuita(manaJucator[4].suita),simbolValoare(manaJucator[4].valoare));
-    printf("Ce carti schimbi? (0 pt niciuna): ");
+    printf("Ce carte schimbi? (0 pt niciuna): ");
 
     int schimbata;
 
@@ -332,4 +332,5 @@ void main(){
 
 
 }
+
 
